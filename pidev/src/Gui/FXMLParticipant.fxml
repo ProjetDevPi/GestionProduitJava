@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="parent" nodeOrientation="LEFT_TO_RIGHT" prefHeight="794.0" prefWidth="1301.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.FXMLParticipantController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="49.0" prefWidth="1306.0" styleClass="head-background" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="224.0" layoutY="47.0" text="Kid'O" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="227.0" layoutY="100.0" text="Since 2015" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="53.0" fitWidth="62.0" layoutX="36.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/buterfly-2.png" />
+               </image>
+            </ImageView>
+         </children>
+         <stylesheets>
+            <URL value="@style.css" />
+            <URL value="@../../../Drapo-Dashboard-JavaFX-master/src/drapo/dashboard/style.css" />
+         </stylesheets>
+      </Pane>
+      <HBox layoutX="-1.0" layoutY="128.0" prefHeight="50.0" prefWidth="1346.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-40.0">
+         <children>
+            <JFXButton onAction="#homeretour" prefHeight="30.0" prefWidth="206.0" ripplerFill="#ee1d1d" text="Home" textFill="#ff0808" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#products" prefHeight="30.0" prefWidth="133.0" text="Products" textFill="#c217eb" underline="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton onAction="#inscriptionretour" prefHeight="30.0" prefWidth="183.0" text="Inscription" textFill="#ebae29" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#carnet" prefHeight="30.0" prefWidth="183.0" text="Notebook" textFill="#7bd021" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#library" prefHeight="30.0" prefWidth="116.0" text="Library" textFill="#25cdca" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="178.0" text="Clubs" textFill="#eb17cf" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="146.0" text="Events" textFill="#ee1669" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="123.0" text="Canteen" textFill="#e7eb09" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="171.0" text="About us" textFill="#8d2184" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <ImageView fitHeight="50.0" fitWidth="240.0" layoutX="18.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/log.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="360.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+216 71 293 658" wrappingWidth="153.13671875">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="360.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+216  97 293 658" wrappingWidth="153.13671875">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="577.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tunis ,El Ghazella" wrappingWidth="147.000013589859" />
+      <Text layoutX="578.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="38 Rue,Ibn Moataz" wrappingWidth="153.13671875" />
+      <Text layoutX="823.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kido@gmail.com" />
+      <ImageView fitHeight="20.0" fitWidth="30.0" layoutX="332.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/call.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="62.0" layoutX="548.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/geo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="39.0" layoutX="793.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/message.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="99.0" layoutX="1218.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/caterpillar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="68.0" layoutX="1020.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/profile.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="62.0" layoutX="1111.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/login.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="86.0" layoutX="897.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bird-2.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" layoutX="482.0" layoutY="213.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="506.0" prefWidth="346.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow color="#ffaa00" />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <ImageView fx:id="imageView" fitHeight="126.0" fitWidth="282.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@img/upcomingevents-header.jpg" />
+               </image>
+            </ImageView>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fill="#db0d16" strokeType="OUTSIDE" strokeWidth="0.0" text="Event:" wrappingWidth="103.44091796875">
+                     <HBox.margin>
+                        <Insets top="40.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bernard MT Condensed" size="23.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="eventnam" alignment="CENTER" focusColor="#db0d16" prefHeight="28.0" prefWidth="243.0" promptText=" Event name" unFocusColor="#db0d16">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets top="35.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fill="#1abd35" strokeType="OUTSIDE" strokeWidth="0.0" text="Type:" wrappingWidth="103.44091796875">
+                     <HBox.margin>
+                        <Insets top="40.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bernard MT Condensed" size="23.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="eventid" alignment="CENTER" focusColor="#1abd35" prefHeight="28.0" prefWidth="243.0" promptText="Type" unFocusColor="#1abd35">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets top="35.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="85.0" prefWidth="306.0">
+               <children>
+                  <Text fill="#ebae29" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter number  space to reserve:" wrappingWidth="124.44091796875">
+                     <HBox.margin>
+                        <Insets top="40.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bernard MT Condensed" size="18.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="id" alignment="CENTER" focusColor="#ebae29" prefHeight="33.0" prefWidth="188.0" promptText="Ticket" unFocusColor="#ebae29">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets top="50.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="33.0" prefWidth="277.0">
+               <VBox.margin>
+                  <Insets top="45.0" />
+               </VBox.margin>
+               <children>
+                  <Pane prefHeight="33.0" prefWidth="303.0">
+                     <children>
+                        <JFXButton fx:id="btnparticiper" layoutX="64.0" layoutY="-2.0" onAction="#participer" prefHeight="37.0" prefWidth="175.0" text="Participer" textFill="#8f39f7" underline="true">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="363.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/3943424-celebration-christmas-confetti-garland-new-party-year_111584.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="95.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/ca.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="1156.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/3943424-celebration-christmas-confetti-garland-new-party-year_111584.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="979.0" layoutY="689.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/3943424-celebration-christmas-confetti-garland-new-party-year_111584.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="1024.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/3943424-celebration-christmas-confetti-garland-new-party-year_111584.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="258.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/3943424-celebration-christmas-confetti-garland-new-party-year_111584.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="373.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/insects-butterfly_icon-icons.com_72455%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="363.0" layoutY="704.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/663confettiball_100741.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="86.0" layoutY="576.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/ca.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="74.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/663confettiball_100741.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="227.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/663confettiball_100741.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="139.0" layoutY="619.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/663confettiball_100741.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="1175.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/663confettiball_100741.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="1218.0" layoutY="711.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/663confettiball_100741.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="945.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/663confettiball_100741.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="1154.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/insects-butterfly_icon-icons.com_72455%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="945.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/insects-butterfly_icon-icons.com_72455%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="903.0" layoutY="541.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/insects-butterfly_icon-icons.com_72455%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="290.0" layoutY="619.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/insects-butterfly_icon-icons.com_72455%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

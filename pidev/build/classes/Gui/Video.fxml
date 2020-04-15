@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="625.0" prefWidth="1394.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.VideoController">
+   <children>
+      <MediaView fx:id="mv" fitHeight="300.0" fitWidth="700.0" layoutX="330.0" layoutY="263.0" />
+      <Pane prefHeight="49.0" prefWidth="1394.0" styleClass="head-background">
+         <children>
+            <ImageView fitHeight="53.0" fitWidth="62.0" layoutX="36.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/buterfly-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="62.0" layoutX="1165.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/login.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="68.0" layoutX="1088.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/profile.png" />
+               </image>
+            </ImageView>
+         </children>
+         <stylesheets>
+            <URL value="@style.css" />
+            <URL value="@../../../Drapo-Dashboard-JavaFX-master/src/drapo/dashboard/style.css" />
+         </stylesheets>
+      </Pane>
+      <HBox layoutX="10.0" layoutY="138.0" prefHeight="40.0" prefWidth="1384.0">
+         <children>
+            <JFXButton onAction="#home" prefHeight="30.0" prefWidth="157.0" ripplerFill="#ee1d1d" text="Home" textFill="#ff0808" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#products" prefHeight="30.0" prefWidth="133.0" text="Products" textFill="#c217eb" underline="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="123.0" text="Inscription" textFill="#ebae29" underline="true">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#carnet" prefHeight="30.0" prefWidth="183.0" text="Notebook" textFill="#7bd021" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#library" prefHeight="30.0" prefWidth="116.0" text="Library" textFill="#25cdca" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="139.0" text="Clubs" textFill="#eb17cf" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#events" prefHeight="30.0" prefWidth="146.0" text="Events" textFill="#ee1669" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="123.0" text="Canteen" textFill="#e7eb09" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="171.0" text="About us" textFill="#8d2184" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <ImageView fitHeight="50.0" fitWidth="240.0" layoutX="28.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/log.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="370.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+216 71 293 658" wrappingWidth="153.13671875">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="370.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+216  97 293 658" wrappingWidth="153.13671875">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="587.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tunis ,El Ghazella" wrappingWidth="147.000013589859" />
+      <Text layoutX="588.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="38 Rue,Ibn Moataz" wrappingWidth="153.13671875" />
+      <Text layoutX="833.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kido@gmail.com" />
+      <ImageView fitHeight="20.0" fitWidth="30.0" layoutX="342.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/call.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="62.0" layoutX="558.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/geo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="39.0" layoutX="803.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/message.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="99.0" layoutX="1228.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/caterpillar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="86.0" layoutX="907.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bird.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="90.0" layoutX="117.0" layoutY="436.0" onMouseClicked="#stopvideo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/unnamed%20(6).png" />
+         </image>
+      </ImageView>
+      <Text fill="#ffaa00" layoutX="548.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Video Publicitaire" wrappingWidth="264.9140625">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+         <effect>
+            <DropShadow color="#b2b2b2" />
+         </effect>
+      </Text>
+      <ImageView fitHeight="153.0" fitWidth="183.0" layoutX="66.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/animated-video-prod-img-1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="169.0" fitWidth="219.0" layoutX="1096.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/12.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="61.0" layoutX="803.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/flat-clap-icone_1063-38.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

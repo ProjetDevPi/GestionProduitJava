@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="501.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.DetailsCommandePayController">
+   <children>
+      <ImageView fitHeight="501.0" fitWidth="532.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/details.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="39.0" layoutY="68.0" prefHeight="392.0" prefWidth="257.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="id_commande" layoutX="149.0" layoutY="43.0" prefHeight="17.0" prefWidth="52.0" text="Label" textFill="#c30505" />
+            <Label fx:id="user_commande" layoutX="147.0" layoutY="74.0" text="Label" textFill="#1400f2" />
+            <Label fx:id="nomprod_commande" layoutX="147.0" layoutY="111.0" prefHeight="17.0" prefWidth="134.0" text="Label" textFill="#ffc001" />
+            <Label fx:id="etat_commande" layoutX="150.0" layoutY="150.0" text="Label" textFill="#05fc26" />
+            <Label fx:id="quantite_commande" layoutX="162.0" layoutY="188.0" text="Label" textFill="#ff008c" />
+            <Label fx:id="paye" layoutX="143.0" layoutY="234.0" text="Label" textFill="#f8f406" />
+            <Label fx:id="prixtotal_commande" layoutX="144.0" layoutY="274.0" stylesheets="@stylesheet.css" text="Label" textFill="#f50000">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="75.0" layoutY="323.0" onAction="#pdf" prefHeight="36.0" prefWidth="79.0" style="-fx-background-color: #ff1a66; -fx-background-radius: 150PX;" stylesheets="@stylesheet.css" text="pdf" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <Text fill="#db0000" fontSmoothingType="LCD" layoutX="17.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identifiant commande:">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="#0009fa" layoutX="19.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom du Client:" wrappingWidth="109.13671875">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="#ffaa00" layoutX="17.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom du  Produit:">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="#00e400" layoutX="16.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etat du Commande:">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="#ff007b" layoutX="14.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantite  du Commande:" wrappingWidth="162.0000016093254">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="#d3d703" layoutX="17.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etat Paiement:">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="#f81500" layoutX="14.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix Totale: ">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="36.0" fitWidth="52.0" layoutX="164.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow height="23.97" radius="17.415" width="47.69" />
+         </effect>
+      </Pane>
+      <Pane layoutX="329.0" layoutY="77.0" prefHeight="175.0" prefWidth="162.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fx:id="photoprod_commande" fitHeight="175.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true" />
+            <Pane layoutX="39.0" layoutY="-18.0" prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: #7FFF00;">
+               <children>
+                  <Text fill="WHITE" layoutX="18.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+               <effect>
+                  <DropShadow color="#00ff09" />
+               </effect>
+            </Pane>
+         </children>
+         <effect>
+            <DropShadow color="#ff9d00" />
+         </effect>
+      </Pane>
+      <Pane layoutX="123.0" layoutY="47.0" prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: #FF1493;">
+         <children>
+            <Text fill="WHITE" layoutX="15.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow color="#d900ff" />
+         </effect>
+      </Pane>
+      <JFXButton layoutX="329.0" layoutY="387.0" onAction="#payer" prefHeight="50.0" prefWidth="141.0" style="-fx-background-color: #ff1a66; -fx-background-radius: 150PX;" stylesheets="@stylesheet.css" text="Payer Commande" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXButton>
+      <ImageView fitHeight="36.0" fitWidth="174.0" layoutX="471.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/AcademicGlassHyena-small.gif" />
+         </image>
+         <effect>
+            <DropShadow color="#ff00ae" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

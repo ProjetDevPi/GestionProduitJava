@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="parent" prefHeight="704.0" prefWidth="1154.0" styleClass="parent" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.FXMLSponsorController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="74.0" layoutY="164.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="389.0" prefWidth="383.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <HBox prefHeight="100.0" prefWidth="410.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sponsor name:" wrappingWidth="138.4765625">
+                     <font>
+                        <Font name="Bodoni MT Condensed Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="40.0" />
+                     </HBox.margin>
+                  </Text>
+                  <JFXTextField fx:id="sponsorname" focusColor="#ff1414" prefHeight="2.0" prefWidth="195.0" promptText="Sponsor name" unFocusColor="#8d8d8d">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="45.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="410.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Product :" wrappingWidth="135.4765625">
+                     <HBox.margin>
+                        <Insets top="35.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bodoni MT Condensed Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <JFXComboBox fx:id="type" focusColor="#c61a1a" prefHeight="46.0" prefWidth="202.0" promptText="Product type" unFocusColor="#8d8d8d">
+                     <padding>
+                        <Insets top="15.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </JFXComboBox>
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <Pane layoutY="-1.0" prefHeight="119.0" prefWidth="1154.0" style="-fx-background-color: #c61a1a;">
+         <children>
+            <Text fill="#ebe7e2" layoutX="343.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sponsor management" textAlignment="CENTER" wrappingWidth="506.9999982714653">
+               <font>
+                  <Font name="Bernard MT Condensed" size="43.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="179.0" fitWidth="269.0" layoutX="219.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/sp.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <VBox alignment="TOP_CENTER" layoutX="486.0" layoutY="164.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="513.0" prefWidth="397.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <TableView fx:id="tableviewS" prefHeight="428.0" prefWidth="422.0" stylesheets="@tableviewsponsor.css">
+               <columns>
+                  <TableColumn fx:id="nom" prefWidth="193.0" text="Name" />
+                  <TableColumn fx:id="typesp" prefWidth="227.0" text="Type" />
+               </columns>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="74.0" layoutY="577.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="383.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="btninsert" onAction="#add" prefHeight="37.0" prefWidth="136.0" text="Add" textFill="#49b90e" underline="true">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="btninsert1" onAction="#edit" prefHeight="37.0" prefWidth="122.0" text="Edit" textFill="#eba000" underline="true">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="btndelete" onAction="#deletes" prefHeight="37.0" prefWidth="119.0" text="Delete" textFill="#ff280f" underline="true">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fitHeight="97.0" fitWidth="138.0" layoutX="42.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/addsponsor.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="87.0" fitWidth="69.0" layoutX="461.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/iconfinder-document03-1622833_121957.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" layoutX="909.0" layoutY="164.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="513.0" prefWidth="224.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="btnevent" onAction="#event" prefHeight="56.0" prefWidth="166.0" text="Events" textFill="#49b90e" underline="true">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="btnsponsor" onAction="#sponsor" prefHeight="56.0" prefWidth="164.0" text="Sponsor" textFill="#ff900b" underline="true">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="btncontrat" onAction="#contrat" prefHeight="56.0" prefWidth="168.0" text="Contract" textFill="#00e2f9" underline="true">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="btnpart" onAction="#participant" prefHeight="56.0" prefWidth="165.0" text="Participation" textAlignment="RIGHT" textFill="RED" underline="true">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Pane layoutX="909.0" layoutY="156.0" prefHeight="31.0" prefWidth="224.0" style="-fx-background-color: #c61a1a #c61a1a;">
+         <children>
+            <Text fill="#f8f8f8" layoutX="31.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manegment Box" textAlignment="CENTER" underline="true" wrappingWidth="139.00001406669617">
+               <font>
+                  <Font name="Bernard MT Condensed" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

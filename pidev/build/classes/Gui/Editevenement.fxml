@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.EditevenementController">
+   <children>
+      <Pane prefHeight="55.0" prefWidth="610.0" style="-fx-background-color: #7782ff;">
+         <children>
+            <Text fill="#ebe7e2" layoutX="177.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit" textAlignment="CENTER" wrappingWidth="216.0000061392784">
+               <font>
+                  <Font name="Bernard MT Condensed" size="35.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="42.0" fitWidth="57.0" layoutX="341.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/notes_edit_12875.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <VBox alignment="TOP_CENTER" layoutX="16.0" layoutY="68.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="318.0" prefWidth="576.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <TextField fx:id="id" alignment="TOP_CENTER" disable="true" prefHeight="41.0" prefWidth="278.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Event name:" wrappingWidth="138.4765625">
+                     <font>
+                        <Font name="Bodoni MT Condensed Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="35.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="nom" prefHeight="31.0" prefWidth="112.0" promptText="Event name">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="35.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Event date:" wrappingWidth="110.4765625">
+                     <font>
+                        <Font name="Bodoni MT Condensed Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="35.0" />
+                     </HBox.margin>
+                  </Text>
+                  <JFXDatePicker fx:id="date" defaultColor="#7782ff" prefHeight="31.0" prefWidth="125.0" promptText="Event date">
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                  </JFXDatePicker>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Event type :" wrappingWidth="140.4765625">
+                     <font>
+                        <Font name="Bodoni MT Condensed Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="35.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="prenom" prefHeight="31.0" prefWidth="116.0" promptText="Type">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="30.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Capacity:" wrappingWidth="110.4765625">
+                     <font>
+                        <Font name="Bodoni MT Condensed Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="30.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="cap" prefHeight="31.0" prefWidth="116.0" promptText="Capacity">
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <JFXButton onAction="#onedit" prefHeight="37.0" prefWidth="136.0" text="Edit" textFill="#f06bff" underline="true">
+               <font>
+                  <Font name="Bernard MT Condensed" size="19.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

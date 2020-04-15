@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rootpane" prefHeight="689.0" prefWidth="1108.0" style="-fx-background-color: white;" stylesheets="@tableview_1_1_1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.CommandeBackController">
+   <children>
+      <Pane layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.75" prefHeight="141.0" prefWidth="1108.0" style="-fx-background-color: #DC143C;">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" color="#e8e4e4" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+         <children>
+            <Pane layoutX="131.0" prefHeight="126.0" prefWidth="249.0">
+               <children>
+                  <Pane layoutX="738.0" layoutY="265.0" prefHeight="285.0" prefWidth="172.0">
+                     <children>
+                        <Pane fx:id="panemanager" layoutX="-3.0" layoutY="3.0" prefHeight="278.0" prefWidth="175.0" style="-fx-background-color: white;">
+                           <effect>
+                              <DropShadow color="#ff00a1" />
+                           </effect>
+                           <children>
+                              <JFXButton buttonType="RAISED" layoutX="42.0" layoutY="75.0" onAction="#delete" prefHeight="25.0" prefWidth="101.0" style="-fx-background-radius: 100PX; -fx-border-color: #DB7093;" text="Delete" textFill="#a11099">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="Valider" buttonType="RAISED" layoutX="46.0" layoutY="139.0" onAction="#Valider" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: transparent; -fx-background-radius: 100PX; -fx-border-color: #663399;" text="Validate" textFill="#4c006f">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="AfterValider" buttonType="RAISED" layoutX="46.0" layoutY="35.0" onAction="#AfterValider" opacity="0.0" prefHeight="25.0" prefWidth="94.0" style="-fx-background-radius: transparent;" text="Back" textFill="#940767">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                 </font>
+                              </JFXButton>
+                              <Pane layoutX="24.0" layoutY="-26.0" prefHeight="52.0" prefWidth="127.0" style="-fx-background-color: #DC143C;">
+                                 <children>
+                                    <Text fill="WHITE" layoutX="14.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manager Box" wrappingWidth="363.9999995827675">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <effect>
+                                    <DropShadow color="#ff00a1" />
+                                 </effect>
+                              </Pane>
+                              <ImageView fitHeight="52.0" fitWidth="77.0" layoutX="67.0" layoutY="212.0" onMouseClicked="#dashbord" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/unnamed%20(5).png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="19.0" fitWidth="25.0" layoutX="149.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icone-supprimer-png-6.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="19.0" fitWidth="25.0" layoutX="149.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icon-valider-png-2.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children></Pane>
+                  <ImageView fitHeight="141.0" fitWidth="180.0" layoutX="93.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/unnamed%20(2).png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField fx:id="filterfield" focusColor="#9f0be4" layoutX="708.0" layoutY="73.0" prefHeight="25.0" prefWidth="150.0" promptText="Search" unFocusColor="#570026" />
+                  <ImageView fitHeight="25.0" fitWidth="34.0" layoutX="833.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/product.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Text fill="WHITE" layoutX="395.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order List" wrappingWidth="363.99999134242535">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="46.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="150.0" fitWidth="204.0" layoutX="380.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/6ob.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="545.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/6ob.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TableView fx:id="liste_commande" layoutX="24.0" layoutY="221.0" prefHeight="388.0" prefWidth="830.0">
+         <columns>
+            <TableColumn fx:id="client_commande" prefWidth="215.0" text="Nom Client" />
+            <TableColumn fx:id="imagecommande" minWidth="0.0" prefWidth="47.0" />
+            <TableColumn fx:id="produit_commande" minWidth="0.0" prefWidth="141.0" text="Nom Produit" />
+            <TableColumn fx:id="quantite_commande" minWidth="0.0" prefWidth="149.0" text="Quantité Commande" />
+            <TableColumn fx:id="prixtotal_commande" minWidth="0.0" prefWidth="118.0" text="Prix Total" />
+            <TableColumn fx:id="etat_commande" minWidth="0.0" prefWidth="75.0" text="Etat " />
+            <TableColumn fx:id="paye_commande" minWidth="0.0" prefWidth="83.0" text="Payée " />
+            <TableColumn fx:id="id_commande" prefWidth="75.0" text="id" visible="false" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="52.0" fitWidth="64.0" layoutX="934.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/design.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

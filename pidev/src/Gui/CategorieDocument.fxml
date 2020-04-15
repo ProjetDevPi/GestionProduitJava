@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="597.0" prefWidth="1047.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.CategorieDocumentController">
+    
+
+    <children>
+        <VBox layoutX="-7.0" prefHeight="604.0" prefWidth="1051.0">
+            <children>
+                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="121.0" prefWidth="1057.0" style="-fx-background-color: #ff9900;" stylesheets="@stylesheet.css">
+                    <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" color="#e8e4e4" height="10.0" radius="4.5" width="10.0" />
+                    </effect>
+                    <children>
+                        <Label layoutX="350.0" layoutY="32.0" prefHeight="53.0" prefWidth="352.0" text="Library Management" textAlignment="JUSTIFY" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                            <font>
+                                <Font name="Yu Gothic UI Bold" size="36.0" />
+                            </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                        </Label>
+                  <ImageView fitHeight="103.0" fitWidth="103.0" layoutX="708.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/135-512.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="51.0" layoutX="34.0" layoutY="26.0" onMouseClicked="#backdash" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/84339.png" />
+                     </image>
+                  </ImageView>
+                    </children>
+                </Pane>
+            <TabPane prefHeight="481.0" prefWidth="893.0" style="-fx-background-color: orange;" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Category">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="498.0" prefWidth="1041.0" style="-fx-background-color: #e0e0d1;" stylesheets="@stylesheet.css">
+                           <children>
+                              <ImageView fitHeight="421.0" fitWidth="423.0" layoutX="4.0" layoutY="51.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/1522165168450-Book%20tablet%20icon.png" />
+                                 </image>
+                              </ImageView>
+                              <TableView fx:id="tab_cat" editable="true" layoutX="432.0" layoutY="48.0" prefHeight="367.0" prefWidth="582.0" tableMenuButtonVisible="true">
+                                 <columns>
+                                    <TableColumn fx:id="nomc" prefWidth="577.0" text="Category Name" />
+                                 </columns>
+                              </TableView>
+                              <TextField fx:id="cat_search" layoutX="866.0" layoutY="14.0" prefHeight="25.0" prefWidth="148.0" promptText="Recherche">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect></TextField>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8a00" height="149.0" layoutX="52.0" layoutY="86.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" width="305.0" />
+                              <TextField fx:id="tfnom" cache="true" layoutX="125.0" layoutY="109.0" prefHeight="25.0" prefWidth="165.0" />
+                              <Button fx:id="buttajoutcat" layoutX="96.0" layoutY="175.0" mnemonicParsing="false" onAction="#ajoutercat" prefHeight="27.0" prefWidth="57.0" style="-fx-background-color: #ffcc00; -fx-background-radius: 100PX;" text="Add" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="Yu Gothic UI Bold" size="13.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect></Button>
+                              <Label layoutX="75.0" layoutY="108.0" prefHeight="27.0" prefWidth="50.0" text="Name:" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Yu Gothic UI Bold" size="13.0" />
+                                 </font></Label>
+                              <Button fx:id="buttsupprimercat" layoutX="262.0" layoutY="175.0" mnemonicParsing="false" onAction="#deletecat" prefHeight="32.0" prefWidth="67.0" style="-fx-background-color: #47d147; -fx-background-radius: 100PX;" text="Delete" textFill="WHITE">
+                                 <font>
+                                    <Font name="Yu Gothic UI Regular" size="12.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect></Button>
+                              <Button fx:id="buttmodifiercat" layoutX="179.0" layoutY="175.0" mnemonicParsing="false" onAction="#updatecat" prefHeight="27.0" prefWidth="57.0" style="-fx-background-color: #4dd2ff; -fx-background-radius: 100PX;" text="Edit" textFill="WHITE">
+                                 <font>
+                                    <Font name="Yu Gothic UI Bold" size="13.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect></Button>
+                              <ImageView fitHeight="24.0" fitWidth="23.0" layoutX="991.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/product.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Document">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="493.0" prefWidth="1051.0" style="-fx-background-color: #e0e0d1;" stylesheets="@stylesheet.css">
+                           <children>
+                              <ImageView fitHeight="441.0" fitWidth="437.0" layoutX="-17.0" layoutY="7.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/1509594.png" />
+                                 </image>
+                              </ImageView>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8a00" height="395.0" layoutX="50.0" layoutY="22.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" width="305.0" />
+                              <TableView fx:id="tab_doc" layoutX="491.0" layoutY="74.0" prefHeight="335.0" prefWidth="415.0" tableMenuButtonVisible="true">
+                                 <columns>
+                                    <TableColumn fx:id="nomdoc" prefWidth="138.0" text="Document Name" />
+                                    <TableColumn fx:id="catdoc" prefWidth="92.0" text="Category" />
+                                    <TableColumn fx:id="etatdoc" prefWidth="92.0" text="State" />
+                                    <TableColumn fx:id="empdoc" prefWidth="92.0" text="Emprunte" />
+                                 </columns>
+                              </TableView>
+                              <TextField fx:id="tfnomdoc" layoutX="160.0" layoutY="50.0" />
+                              <Button fx:id="buttajoutdoc" layoutX="73.0" layoutY="309.0" mnemonicParsing="false" onAction="#ajouterdoc" prefHeight="32.0" prefWidth="76.0" style="-fx-background-color: #33ccff; -fx-background-radius: 100PX;" text="Add" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect></Button>
+                              <Label layoutX="95.0" layoutY="52.0" prefHeight="17.0" prefWidth="55.0" text="Name :">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font></Label>
+                              <Button fx:id="buttsupprimerdoc" layoutX="273.0" layoutY="310.0" mnemonicParsing="false" onAction="#deletedoc" prefHeight="29.0" prefWidth="63.0" style="-fx-background-color: #47d147; -fx-background-radius: 100PX;" text="Delete" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect></Button>
+                              <Button fx:id="buttmodifierdoc" layoutX="182.0" layoutY="358.0" mnemonicParsing="false" onAction="#updatedoc" prefHeight="28.0" prefWidth="61.0" style="-fx-background-color: orange; -fx-background-radius: 100PX;" text="Edit" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect></Button>
+                              <Label layoutX="96.0" layoutY="101.0" text="Category :">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font></Label>
+                              <ComboBox fx:id="combocat" layoutX="160.0" layoutY="97.0" prefWidth="150.0" />
+                              <Label layoutX="97.0" layoutY="149.0" text="State :">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font></Label>
+                              <Label layoutX="100.0" layoutY="229.0" text="Image :">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font></Label>
+                              <ImageView fx:id="imgview" fitHeight="91.0" fitWidth="172.0" layoutX="167.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/avatar.png" />
+                                 </image></ImageView>
+                              <TextField fx:id="docsrc" layoutX="841.0" layoutY="18.0" prefHeight="29.0" prefWidth="169.0" promptText="Recherche" style="-fx-background-color: white;" />
+                              <JFXButton fx:id="buttimpimg" layoutX="278.0" layoutY="235.0" onAction="#addImage" text="Import">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font></JFXButton>
+                              <ComboBox fx:id="state_combo" layoutX="160.0" layoutY="144.0" prefWidth="150.0" />
+                              <ImageView fitHeight="23.0" fitWidth="60.0" layoutX="987.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/product.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Loans">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="498.0" prefWidth="1041.0" style="-fx-background-color: #e0e0d1;" stylesheets="@stylesheet.css">
+                           <children>
+                              <TableView fx:id="tab_emp" layoutX="193.0" layoutY="31.0" prefHeight="368.0" prefWidth="582.0">
+                                 <columns>
+                                    <TableColumn fx:id="iddocemp" prefWidth="227.0" text="document name" />
+                                    <TableColumn fx:id="dateemp" prefWidth="175.0" text="Loan Date" />
+                                    <TableColumn fx:id="dateret" prefWidth="179.0" text="Return Date " />
+                                 </columns>
+                              </TableView>
+                              <Button fx:id="buttsuppemp" layoutX="863.0" layoutY="138.0" mnemonicParsing="false" onAction="#deleteemp" prefHeight="40.0" prefWidth="83.0" style="-fx-background-color: #ff0000; -fx-background-radius: 100PX;" text="Delete" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect></Button>
+                              <ImageView fitHeight="424.0" fitWidth="399.0" layoutX="25.0" layoutY="31.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/s.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="pdfbutt" layoutX="860.0" layoutY="229.0" mnemonicParsing="false" onAction="#pdf" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #3366ff; -fx-background-radius: 100PX;" text="Print" textFill="WHITE">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Button>
+                              <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="963.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icone-supprimer-png-6.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="963.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icon.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            </children>
+        </VBox>
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" prefHeight="638.0" prefWidth="617.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 3PX;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.RatingController">
+   <children>
+      <Rating fx:id="eleveR" layoutX="309.0" layoutY="113.0" onMouseClicked="#commentaire1" rating="0.0" />
+      <JFXButton buttonType="RAISED" layoutX="506.0" layoutY="580.0" onAction="#submit" prefHeight="33.0" prefWidth="88.0" style="-fx-border-color: #C93756;" text="Valider" textFill="#d70064">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="nom1" layoutX="65.0" layoutY="115.0" prefHeight="27.0" prefWidth="130.0" text="Service-Eleve:">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="nom2" layoutX="57.0" layoutY="221.0" text="Service-Scolarité:">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Rating fx:id="scolariteR" layoutX="309.0" layoutY="218.0" onMouseClicked="#commentaire2" rating="0.0" />
+      <Label fx:id="nom3" layoutX="47.0" layoutY="337.0" text="Activités et Recherches:">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Rating fx:id="activiteR" layoutX="309.0" layoutY="334.0" onMouseClicked="#commentaire3" rating="0.0" />
+      <Label fx:id="nom4" layoutX="41.0" layoutY="472.0" text="Enseignant et Evaluation:">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Rating fx:id="ensgR" layoutX="309.0" layoutY="456.0" onMouseClicked="#commentaire4" rating="0.0" />
+      <Pane fx:id="pane" layoutX="1.0" prefHeight="84.0" prefWidth="615.0" style="-fx-background-color: #C93756;">
+         <children>
+            <Text fill="WHITE" layoutX="93.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donner Votre Avis" textAlignment="CENTER" wrappingWidth="410.00000371038914">
+               <font>
+                  <Font name="Arial Black" size="31.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="64.0" fitWidth="73.0" layoutX="49.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/star.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="64.0" fitWidth="65.0" layoutX="503.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/star.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextField fx:id="txt1" layoutX="273.0" layoutY="167.0" prefHeight="31.0" prefWidth="233.0" />
+      <TextField fx:id="txt4" layoutX="263.0" layoutY="525.0" prefHeight="31.0" prefWidth="233.0" />
+      <TextField fx:id="txt3" layoutX="273.0" layoutY="394.0" prefHeight="31.0" prefWidth="233.0" />
+      <TextField fx:id="txt2" layoutX="273.0" layoutY="272.0" prefHeight="31.0" prefWidth="233.0" />
+      <Label fx:id="nom21" layoutX="85.0" layoutY="172.0" text="Commentaire......" textFill="#00900c" />
+      <Label fx:id="nom211" layoutX="76.0" layoutY="277.0" text="Commentaire....." textFill="#00900c" />
+      <Label fx:id="nom212" layoutX="76.0" layoutY="399.0" text="Commentaire....." textFill="#00900c" />
+      <Label fx:id="nom213" layoutX="76.0" layoutY="527.0" text="Commentaire......" textFill="#00900c" />
+   </children>
+</AnchorPane>

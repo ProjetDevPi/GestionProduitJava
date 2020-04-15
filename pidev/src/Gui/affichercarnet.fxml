@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootpane" prefHeight="713.0" prefWidth="1163.0" styleClass="parent" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.AffichercarnetController">
+    <children>
+        <VBox prefHeight="746.0" prefWidth="1239.0">
+            <children>
+                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="132.0" prefWidth="1252.0" style="-fx-background-color: #DB7093;">
+               <children>
+                  <Text fx:id="titre" layoutX="455.0" layoutY="53.0" onMouseMoved="#fade" strokeType="OUTSIDE" strokeWidth="0.0" text="NoteBook  Management" wrappingWidth="436.99999134242535">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="46.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="115.0" fitWidth="116.0" layoutX="300.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/journal.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="filterfield" layoutX="964.0" layoutY="83.0" prefHeight="31.0" prefWidth="215.0">
+                     <effect>
+                        <DropShadow />
+                     </effect></TextField>
+                  <Label layoutX="964.0" layoutY="50.0" prefHeight="27.0" prefWidth="83.0" text="Search:">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="42.0" fitWidth="58.0" layoutX="1131.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="1200.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/search.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="49.0" fitWidth="76.0" layoutX="14.0" layoutY="3.0" onMouseClicked="#retour" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/return.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" color="#e8e4e4" height="10.0" radius="4.5" width="10.0" />
+               </effect>
+                </Pane>
+                <HBox alignment="CENTER" />
+            <Pane prefHeight="626.0" prefWidth="1233.0">
+               <children>
+                  <Pane layoutX="347.0" layoutY="60.0" prefHeight="279.0" prefWidth="501.0" />
+                  <VBox fx:id="vbox" alignment="TOP_CENTER" layoutX="505.0" layoutY="456.0" maxHeight="-Infinity" maxWidth="-Infinity" onMouseMoved="#bounce" prefHeight="104.0" prefWidth="546.0" style="-fx-background-color: white;">
+                     <effect>
+                        <DropShadow color="#dd0101" />
+                     </effect>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton buttonType="RAISED" layoutX="58.0" layoutY="12.0" onAction="#onedit" prefHeight="29.0" prefWidth="76.0" ripplerFill="#eb3e3e" text="Edit" textFill="#2bb501">
+                                 <font>
+                                    <Font name="Book Antiqua" size="21.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton buttonType="RAISED" layoutX="149.0" layoutY="12.0" text="Details" textFill="#da0a8a">
+                                 <font>
+                                    <Font name="Book Antiqua" size="21.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton buttonType="RAISED" layoutX="272.0" layoutY="12.0" onAction="#delete" text="Delete" textFill="#0ab5ee">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="21.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="addbut" buttonType="RAISED" layoutX="382.0" layoutY="12.0" text="Add" textFill="#da0a8a">
+                                 <font>
+                                    <Font name="Book Antiqua" size="21.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="58.0" fitWidth="69.0" layoutX="923.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/project.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="626.0" layoutY="427.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="279.0" style="-fx-background-color: #DB7093;">
+                     <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" color="#e8e4e4" height="10.0" radius="4.5" width="10.0" />
+                     </effect>
+                     <children>
+                        <Text layoutX="18.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manager Box" wrappingWidth="242.99999134242535">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="37.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <VBox fx:id="vbox2" alignment="TOP_CENTER" layoutX="1085.0" layoutY="376.0" maxHeight="-Infinity" maxWidth="-Infinity" onMouseMoved="#bounce2" prefHeight="204.0" prefWidth="147.0" style="-fx-background-color: white;">
+                     <effect>
+                        <DropShadow color="#d70b0b" />
+                     </effect>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <children>
+                        <JFXButton buttonType="RAISED" prefHeight="41.0" prefWidth="262.0" text="Absence" textFill="#e43306">
+                           <font>
+                              <Font name="Book Antiqua Bold Italic" size="21.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" onAction="#toclasse" prefHeight="41.0" prefWidth="231.0" text="Classe" textFill="#0f1bd6">
+                           <font>
+                              <Font name="Book Antiqua Bold Italic" size="21.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" text="Carnet" textFill="#e43306">
+                           <font>
+                              <Font name="Book Antiqua Bold Italic" size="21.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="btnab" buttonType="RAISED" onAction="#toeleve" text="Student" textFill="#15e307">
+                           <font>
+                              <Font name="Book Antiqua Bold Italic" size="21.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <Pane layoutX="1048.0" layoutY="356.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="184.0" style="-fx-background-color: #DB7093;">
+                     <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" color="WHITE" height="10.0" radius="4.5" width="10.0" />
+                     </effect>
+                     <children>
+                        <Text layoutX="14.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="boxOffice" wrappingWidth="155.99999134242535">
+                           <font>
+                              <Font name="Berlin Sans FB" size="35.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <VBox fx:id="vbox3" alignment="TOP_CENTER" layoutX="25.0" layoutY="39.0" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#bounce3" prefHeight="542.0" prefWidth="464.0" style="-fx-background-color: white;">
+                     <effect>
+                        <DropShadow color="#dd0101" />
+                     </effect>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <children>
+                        <Pane prefHeight="503.0" prefWidth="424.0">
+                           <children>
+                              <Label fx:id="el" layoutX="43.0" layoutY="52.0" prefHeight="21.0" prefWidth="83.0" text="Carnet De :" />
+                              <Label layoutX="43.0" layoutY="118.0" text="Note" />
+                              <Label layoutX="37.0" layoutY="188.0" text="Appreciation" />
+                              <Label layoutX="31.0" layoutY="336.0" text="date" />
+                              <Label layoutX="26.0" layoutY="403.0" text="semestre" />
+                              <JFXComboBox fx:id="eleve" layoutX="168.0" layoutY="47.0" prefHeight="31.0" prefWidth="199.0" />
+                              <JFXTextField fx:id="note" layoutX="150.0" layoutY="113.0" />
+                              <JFXTextArea fx:id="appreciation" layoutX="46.0" layoutY="220.0" prefHeight="64.0" prefWidth="346.0" />
+                              <JFXDatePicker fx:id="date" layoutX="110.0" layoutY="331.0" prefHeight="31.0" prefWidth="263.0" />
+                              <JFXButton buttonType="RAISED" layoutX="324.0" layoutY="450.0" onAction="#addC" text="insert" textFill="#13a100">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="18.0" />
+                                 </font></JFXButton>
+                              <Label fx:id="lab" layoutX="41.0" layoutY="63.0" text="id" />
+                              <JFXTextField fx:id="idd" layoutX="176.0" layoutY="58.0" prefHeight="31.0" prefWidth="184.0" />
+                              <JFXButton buttonType="RAISED" layoutX="21.0" layoutY="450.0" onAction="#clear" text="clear" textFill="#ee004b">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="20.0" />
+                                 </font></JFXButton>
+                              <JFXComboBox fx:id="semestre" layoutX="112.0" layoutY="398.0" prefHeight="31.0" prefWidth="243.0" />
+                           </children></Pane>
+                     </children>
+                  </VBox>
+                  <Pane layoutX="103.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="279.0" style="-fx-background-color: #DB7093;">
+                     <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" color="#e8e4e4" height="10.0" radius="4.5" width="10.0" />
+                     </effect>
+                     <children>
+                        <Text fx:id="add" layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add NoteBook" wrappingWidth="293.99999134242535">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="37.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="edit" layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit NoteBook" wrappingWidth="293.99999134242535">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="37.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <TableView fx:id="tableC" layoutX="560.0" layoutY="26.0" prefHeight="303.0" prefWidth="616.0" stylesheets="@carnet.css">
+                    <columns>
+                      <TableColumn fx:id="idC" prefWidth="60.0" text="Id" visible="false" />
+                      <TableColumn fx:id="noteC" prefWidth="104.0" text="note" />
+                        <TableColumn fx:id="appreciationC" minWidth="0.0" prefWidth="127.0" text="appreciation" />
+                        <TableColumn fx:id="dateC" prefWidth="141.0" text="Date" />
+                        <TableColumn fx:id="semestreC" minWidth="0.0" prefWidth="132.0" text="semestre" />
+                        <TableColumn fx:id="eleveC" prefWidth="138.0" text="Eleve" />
+                    </columns>
+                     <styleClass>
+                        <String fx:value="virtual-flow" />
+                        <String fx:value="track-background" />
+                        <String fx:value="column-header-background1" />
+                        <String fx:value="root" />
+                        <String fx:value="table-row-cell" />
+                        <String fx:value="table-view2" />
+                     </styleClass>
+                     <effect>
+                        <DropShadow color="#d01111" />
+                     </effect>
+                  </TableView>
+               </children>
+            </Pane>
+            </children>
+        </VBox>
+    </children>
+   <stylesheets>
+      <URL value="@stylesheet.css" />
+      <URL value="@style_1.css" />
+   </stylesheets>
+</AnchorPane>

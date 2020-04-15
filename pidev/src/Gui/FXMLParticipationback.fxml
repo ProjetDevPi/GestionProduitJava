@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="parent" prefHeight="600" prefWidth="1154.0" styleClass="parent" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.FXMLParticipationbackController">
+    <children>
+      <Pane prefHeight="105.0" prefWidth="1154.0" style="-fx-background-color: #008d49;">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="107.0" layoutX="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/7_snowflake_ball__christmas_xmas_decoration_light_icon-icons.com_77042.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="107.0" layoutX="290.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/7_snowflake_ball__christmas_xmas_decoration_light_icon-icons.com_77042.png" />
+               </image>
+            </ImageView>
+            <Text fill="#ebe7e2" layoutX="272.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Participation management" textAlignment="CENTER" wrappingWidth="506.9999982714653">
+               <font>
+                  <Font name="Bernard MT Condensed" size="30.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="notif_empty" fitHeight="56.0" fitWidth="65.0" layoutX="1090.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/notification3_icon-icons.com_73720.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="notif_1" fitHeight="56.0" fitWidth="74.0" layoutX="1090.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/notification4_icon-icons.com_73708.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <VBox alignment="TOP_CENTER" layoutX="70.0" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="444.0" prefWidth="428.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <TableView fx:id="part" prefHeight="416.0" prefWidth="267.0" stylesheets="@tableviewparticipant.css">
+               <columns>
+                  <TableColumn fx:id="event" prefWidth="139.0" text="Event" />
+                  <TableColumn fx:id="participant" prefWidth="143.0" text="Participant" />
+                  <TableColumn fx:id="nbrplace" prefWidth="102.0" text="Nbr" />
+                  <TableColumn fx:id="iduser" prefWidth="43.0" text="iduser" />
+                  <TableColumn fx:id="imageC" prefWidth="75.0" text="photo" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="547.0" layoutY="133.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="325.0" prefWidth="322.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <ImageView fx:id="imageView" fitHeight="97.0" fitWidth="213.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXTextField fx:id="namedetail" alignment="CENTER" focusColor="#78ff7b" prefHeight="28.0" prefWidth="282.0" promptText=" Event name" unFocusColor="#25db0d">
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="participantdeatil" alignment="CENTER" focusColor="#7782ff" prefHeight="25.0" prefWidth="245.0" promptText="Type" unFocusColor="#ff7300">
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="nbrpace" alignment="CENTER" focusColor="#7782ff" prefHeight="25.0" prefWidth="245.0" promptText="Capacity" unFocusColor="#10b236">
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </JFXTextField>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="547.0" layoutY="473.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="90.0" prefWidth="322.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="btninsert1" onAction="#deletes" prefHeight="37.0" prefWidth="122.0" text="Delete" textFill="#eb7900" underline="true">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets top="15.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="envoyer" onAction="#envoyer" prefHeight="37.0" prefWidth="122.0" text="Envoyer" textFill="#39c31e" underline="true">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="8.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fitHeight="67.0" fitWidth="63.0" layoutX="484.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/confetti.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="63.0" layoutX="14.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/confetti.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="39.0" layoutX="923.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@petard.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="39.0" layoutX="510.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/petard.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="40.0" layoutX="484.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/ca.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="40.0" layoutX="26.0" layoutY="534.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/ca.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="869.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/confetti.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="39.0" layoutX="14.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/petard.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" layoutX="909.0" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="426.0" prefWidth="224.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="btnevent" onAction="#event" prefHeight="56.0" prefWidth="166.0" text="Events" textFill="#49b90e" underline="true">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="btnsponsor" onAction="#sponsor" prefHeight="56.0" prefWidth="164.0" text="Sponsor" textFill="#ff900b" underline="true">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="btncontrat" onAction="#contrat" prefHeight="56.0" prefWidth="168.0" text="Contract" textFill="#0084f7" underline="true">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="btnpart" onAction="#participant" prefHeight="56.0" prefWidth="165.0" text="Participation" textAlignment="RIGHT" textFill="#ddc019" underline="true">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <ImageView fitHeight="35.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/confetti.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <ImageView fitHeight="63.0" fitWidth="40.0" layoutX="883.0" layoutY="543.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/ca.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="39.0" layoutX="1060.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/petard.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="40.0" layoutX="50.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/ca.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="39.0" layoutX="875.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/petard.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="909.0" layoutY="124.0" prefHeight="31.0" prefWidth="224.0" style="-fx-background-color: #008d49 #008d49;">
+         <children>
+            <Text fill="#f8f8f8" layoutX="31.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manegment Box" textAlignment="CENTER" underline="true" wrappingWidth="139.00001406669617">
+               <font>
+                  <Font name="Bernard MT Condensed" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

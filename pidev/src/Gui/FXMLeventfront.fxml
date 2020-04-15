@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="btnpartriciper" nodeOrientation="LEFT_TO_RIGHT" prefHeight="828.0" prefWidth="1344.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.FXMLeventfrontController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="49.0" prefWidth="1306.0" styleClass="head-background" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="224.0" layoutY="47.0" text="Kid'O" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="227.0" layoutY="100.0" text="Since 2015" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="53.0" fitWidth="62.0" layoutX="36.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/buterfly-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="68.0" layoutX="1027.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/profile.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="62.0" layoutX="1111.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/login.png" />
+               </image>
+            </ImageView>
+         </children>
+         <stylesheets>
+            <URL value="@style.css" />
+            <URL value="@../../../Drapo-Dashboard-JavaFX-master/src/drapo/dashboard/style.css" />
+         </stylesheets>
+      </Pane>
+      <HBox layoutX="-42.0" layoutY="128.0" prefHeight="40.0" prefWidth="1389.0" AnchorPane.leftAnchor="-42.0" AnchorPane.rightAnchor="-42.0">
+         <children>
+            <JFXButton onAction="#homeretour" prefHeight="30.0" prefWidth="206.0" ripplerFill="#ee1d1d" text="Home" textFill="#ff0808" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#products" prefHeight="30.0" prefWidth="133.0" text="Products" textFill="#c217eb" underline="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton onAction="#inscriptionretour" prefHeight="30.0" prefWidth="183.0" text="Inscription" textFill="#ebae29" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#carnetretour" prefHeight="30.0" prefWidth="183.0" text="Notebook" textFill="#7bd021" underline="true">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#library" prefHeight="30.0" prefWidth="116.0" text="Library" textFill="#25cdca" underline="true">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="178.0" text="Clubs" textFill="#eb17cf" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="146.0" text="Events" textFill="#ee1669" underline="true">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="123.0" text="Canteen" textFill="#e7eb09" underline="true">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="171.0" text="About us" textFill="#8d2184" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <ImageView fitHeight="50.0" fitWidth="240.0" layoutX="18.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/log.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="360.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+216 71 293 658" wrappingWidth="153.13671875">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="360.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+216  97 293 658" wrappingWidth="153.13671875">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="577.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tunis ,El Ghazella" wrappingWidth="147.000013589859" />
+      <Text layoutX="578.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="38 Rue,Ibn Moataz" wrappingWidth="153.13671875" />
+      <Text layoutX="823.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kido@gmail.com" />
+      <ImageView fitHeight="20.0" fitWidth="30.0" layoutX="332.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/call.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="62.0" layoutX="548.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/geo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="39.0" layoutX="793.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/message.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="99.0" layoutX="1218.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/caterpillar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="62.0" layoutX="897.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bird-2.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" layoutX="793.0" layoutY="244.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="471.0" prefWidth="400.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <ImageView fx:id="imageView" fitHeight="119.0" fitWidth="282.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <JFXTextField fx:id="namedetail" alignment="CENTER" focusColor="#7782ff" prefHeight="28.0" prefWidth="282.0" promptText=" Event name" unFocusColor="#dd0cb4">
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="typedetail" alignment="CENTER" focusColor="#7782ff" prefHeight="25.0" prefWidth="245.0" promptText="Type" unFocusColor="#53ae08">
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="datedetail" alignment="CENTER" focusColor="#7782ff" prefHeight="25.0" prefWidth="245.0" promptText="Date" unFocusColor="#28ff14">
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="capacitydetail" alignment="CENTER" focusColor="#7782ff" prefHeight="25.0" prefWidth="245.0" promptText="Capacity" unFocusColor="#f7b502">
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXButton fx:id="btnaffecter1" onAction="#participer" prefHeight="37.0" prefWidth="175.0" text="Participer" textFill="#f53de9" underline="true">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="179.0" layoutY="283.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="416.0" prefWidth="389.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <TableView fx:id="tableviewE" prefHeight="370.0" prefWidth="349.0" stylesheets="@tablevieweventfront.css">
+               <columns>
+                  <TableColumn fx:id="nom" prefWidth="131.0" text="Name" />
+                  <TableColumn fx:id="afftype" prefWidth="114.0" text="Type" />
+                  <TableColumn fx:id="affdate" prefWidth="115.0" text="Date" />
+                  <TableColumn fx:id="imageC" minWidth="0.0" prefWidth="57.0" text="image" visible="false" />
+                  <TableColumn fx:id="capacity" minWidth="0.0" prefWidth="70.0" text="nbr" visible="false" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <ImageView fitHeight="101.0" fitWidth="153.0" layoutX="590.0" layoutY="692.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/bigstock-events.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="53.0" layoutX="671.0" layoutY="583.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/insects-butterfly_icon-icons.com_72455%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="32.0" layoutX="118.0" layoutY="642.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/insects-butterfly_icon-icons.com_72455%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="55.0" layoutX="1163.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/insects-butterfly_icon-icons.com_72455%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="55.0" layoutX="49.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/2_snowflake__christmas_xmas_winter_snow_decoration_celebration_icon-icons.com_77037.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="55.0" layoutX="59.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/2_snowflake__christmas_xmas_winter_snow_decoration_celebration_icon-icons.com_77037.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="55.0" layoutX="49.0" layoutY="690.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/2_snowflake__christmas_xmas_winter_snow_decoration_celebration_icon-icons.com_77037.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="55.0" layoutX="1130.0" layoutY="710.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/2_snowflake__christmas_xmas_winter_snow_decoration_celebration_icon-icons.com_77037.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="55.0" layoutX="1220.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/2_snowflake__christmas_xmas_winter_snow_decoration_celebration_icon-icons.com_77037.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="55.0" layoutX="483.0" layoutY="730.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/2_snowflake__christmas_xmas_winter_snow_decoration_celebration_icon-icons.com_77037.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="33.0" layoutX="617.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/2_snowflake__christmas_xmas_winter_snow_decoration_celebration_icon-icons.com_77037.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="55.0" layoutX="63.0" layoutY="484.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/1494258112-honeybeeinsectflybeekeepingapiaryapiculture_84365.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="55.0" layoutX="1207.0" layoutY="649.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/1494258112-honeybeeinsectflybeekeepingapiaryapiculture_84365.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="45.0" layoutX="702.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/1494258045-sunsunnyweatherspringforecastsummer_84343.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="45.0" layoutX="668.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/1494258045-sunsunnyweatherspringforecastsummer_84343.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="45.0" layoutX="91.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/1494258045-sunsunnyweatherspringforecastsummer_84343.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="45.0" layoutX="1199.0" layoutY="478.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/1494258045-sunsunnyweatherspringforecastsummer_84343.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="274.0" layoutY="215.0" opacity="0.74" prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow color="#ff00b2" />
+         </effect>
+         <children>
+            <Text fill="#bf0089" layoutX="32.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KID'O EVENT">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="886.0" layoutY="195.0" opacity="0.74" prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow color="#ff00b2" />
+         </effect>
+         <children>
+            <Text fill="#bf0089" layoutX="44.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Participate">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

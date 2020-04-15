@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="337.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.EditController">
+   <children>
+      <ImageView fitHeight="483.0" fitWidth="343.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sarraback.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Pane layoutX="34.0" layoutY="28.0" prefHeight="423.0" prefWidth="257.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow color="#fff312" />
+         </effect>
+         <children>
+            <Text fill="#37d30c" layoutX="40.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mise a jour des produits" wrappingWidth="158.13671875">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id" disable="true" layoutX="75.0" layoutY="68.0" opacity="0.46" prefHeight="27.0" prefWidth="137.0" style="-fx-background-color: transprarent; -fx-border-color: red;" text="id" />
+            <ComboBox fx:id="categorie" layoutX="76.0" layoutY="111.0" opacity="0.48" prefHeight="27.0" prefWidth="137.0" promptText="categorie" style="-fx-background-color: transparent; -fx-border-color: #ff4dc4;" />
+            <TextField fx:id="nomm" layoutX="74.0" layoutY="155.0" opacity="0.61" prefHeight="27.0" prefWidth="137.0" style="-fx-background-color: transparent; -fx-border-color: Orange;" text="Nom" />
+            <TextField fx:id="prixx" layoutX="75.0" layoutY="201.0" opacity="0.56" prefHeight="27.0" prefWidth="137.0" style="-fx-background-color: white; -fx-border-color: Blue;" text="prix" />
+            <TextField fx:id="descriptionn" layoutX="75.0" layoutY="248.0" opacity="0.45" prefHeight="27.0" prefWidth="137.0" style="-fx-background-color: white; -fx-border-color: yellow;" text="description" />
+            <TextField fx:id="filechoose" layoutX="72.0" layoutY="289.0" prefHeight="25.0" prefWidth="149.0" promptText="image" style="-fx-background-color: transparent; -fx-border-color: #660066;" />
+            <ImageView fitHeight="27.0" fitWidth="33.0" layoutX="195.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/upload-512.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="quantitee" layoutX="75.0" layoutY="333.0" opacity="0.51" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: white; -fx-border-color: #00ffbf;" text="quantite" />
+            <Button layoutX="56.0" layoutY="376.0" mnemonicParsing="false" onAction="#onedit" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: #ffa31a; -fx-background-radius: 100PX;" text="editer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="chooser" layoutX="187.0" layoutY="290.0" mnemonicParsing="false" onAction="#image" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: transparent;" text="chooser" />
+            <Text fill="#e81717" layoutX="14.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identifiant">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="#fa23f2" layoutX="15.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categorie">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="#f2a304" layoutX="22.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" wrappingWidth="36.34375">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="#1121fc" layoutX="30.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix" />
+            <Text fill="#d0ff00" layoutX="9.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="69.251953125">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="#610072" layoutX="29.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="#0c9eff" layoutX="20.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantite" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

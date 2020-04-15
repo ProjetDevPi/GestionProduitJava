@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rootpane" prefHeight="501.0" prefWidth="914.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.AfficherRController">
+   <children>
+      <Pane layoutX="452.0" prefHeight="502.0" prefWidth="462.0" style="-fx-background-color: #F47983;">
+         <children>
+            <TextField fx:id="filterfield" layoutX="249.0" layoutY="33.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="-4.0" prefHeight="502.0" prefWidth="462.0" style="-fx-background-color: #DB5A6B;">
+         <children>
+            <HBox layoutX="52.0" layoutY="80.0" prefHeight="378.0" prefWidth="817.0" style="-fx-background-color: white;">
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <children>
+                  <TableView fx:id="tabR" prefHeight="378.0" prefWidth="425.0">
+                    <columns>
+                      <TableColumn fx:id="nomC" prefWidth="166.0" text="Nom Service" />
+                        <TableColumn fx:id="userC" minWidth="0.0" prefWidth="29.0" text="User" visible="false" />
+                        <TableColumn fx:id="comC" minWidth="0.0" prefWidth="63.0" text="Commentaire" visible="false" />
+                      <TableColumn fx:id="ratC" minWidth="0.0" prefWidth="207.0" text="Rating" />
+                    </columns>
+                  </TableView>
+                  <BarChart fx:id="barchart" prefHeight="378.0" prefWidth="495.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+               </children>
+            </HBox>
+            <Pane layoutX="264.0" layoutY="-17.0" prefHeight="75.0" prefWidth="393.0">
+               <children>
+                  <Text layoutX="51.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating Du Jour" underline="true" wrappingWidth="268.6708984375">
+                     <font>
+                        <Font name="Arial Narrow Bold Italic" size="40.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="308.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/star.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="-30.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/star.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

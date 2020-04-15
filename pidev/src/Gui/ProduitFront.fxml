@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rootpane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="751.0" prefWidth="1315.0" style="-fx-background-color: #fff;" styleClass="myDialog" stylesheets="@Alert.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.ProduitFrontController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="49.0" prefWidth="1262.0" styleClass="head-background" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="224.0" layoutY="47.0" text="Kid'O" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="227.0" layoutY="100.0" text="Since 2015" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="53.0" fitWidth="62.0" layoutX="36.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/buterfly-2.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="user" fill="WHITE" layoutX="755.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="90.25781773030758">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="680.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" wrappingWidth="75.0000049173832">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="49.0" fitWidth="45.0" layoutX="1220.0" layoutY="2.0" onMouseClicked="#panier" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Shopping-basket-add-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="62.0" layoutX="1123.0" layoutY="3.0" onMouseClicked="#login" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/login.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="68.0" layoutX="1032.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/profile.png" />
+               </image>
+            </ImageView>
+         </children>
+         <stylesheets>
+            <URL value="@style.css" />
+            <URL value="@../../../Drapo-Dashboard-JavaFX-master/src/drapo/dashboard/style.css" />
+         </stylesheets>
+      </Pane>
+      <Pane fx:id="panecommande" layoutY="180.0" prefHeight="602.0" prefWidth="1315.0">
+         <children>
+            <TableView fx:id="tableP" layoutX="253.0" layoutY="105.0" prefHeight="450.0" prefWidth="740.0" stylesheets="@tableview_1_1.css">
+               <styleClass>
+                  <String fx:value="virtual-flow" />
+                  <String fx:value="track-background" />
+                  <String fx:value="tableview" />
+                  <String fx:value="column-header-background" />
+                  <String fx:value="root" />
+               </styleClass>
+               <columns>
+                  <TableColumn fx:id="idC" prefWidth="75.0" text="id" visible="false" />
+                  <TableColumn fx:id="image2" prefWidth="220.0" text="imageProduit" />
+                  <TableColumn fx:id="nomproduitC" prefWidth="200.0" text="Nom Produit" />
+                  <TableColumn fx:id="prixC" minWidth="0.0" prefWidth="0.0" text="Prix" />
+                  <TableColumn fx:id="imageC" prefWidth="115.0" text="Image" visible="false" />
+                  <TableColumn fx:id="descriptionC" prefWidth="152.0" text="Description" />
+                  <TableColumn fx:id="quantiteC" prefWidth="170.0" text="Quantite " />
+               </columns>
+               <effect>
+                  <DropShadow color="#ff00d9" />
+               </effect>
+            </TableView>
+            <VBox fx:id="s" layoutX="40.0" layoutY="125.0" prefHeight="308.0" prefWidth="170.0" style="-fx-background-color: white;">
+               <effect>
+                  <DropShadow color="#29ed11" />
+               </effect>
+               <children>
+                  <Pane fx:id="sarra" prefHeight="327.0" prefWidth="187.0" style="-fx-background-color: white;">
+                     <effect>
+                        <DropShadow color="#00ff11" />
+                     </effect>
+                     <children>
+                        <JFXButton layoutX="16.0" layoutY="109.0" onAction="#tablierscolaire" prefHeight="25.0" prefWidth="141.0" text="Tablier Scolaire" textFill="#00ffe6">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="12.0" layoutY="161.0" onAction="#fourniturescolaire" prefHeight="25.0" prefWidth="147.0" text="Fourniture Scolaire" textFill="#ff0c0c">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="34.0" layoutY="215.0" onAction="#sacados" prefHeight="25.0" prefWidth="103.0" text="Sac a Dos" textFill="#ff9500">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXComboBox fx:id="Trie_par" focusColor="#49e41a" layoutX="7.0" layoutY="43.0" onAction="#trier_categorie" prefHeight="25.0" prefWidth="158.0" promptText="Trier Par Categorie" unFocusColor="#6fc70e">
+                           <effect>
+                              <DropShadow color="#2fff00" />
+                           </effect>
+                        </JFXComboBox>
+                        <JFXButton layoutX="40.0" layoutY="256.0" onAction="#all" prefHeight="29.0" prefWidth="90.0" text="All" textFill="#2402ff">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <Pane layoutX="76.0" layoutY="88.0" prefHeight="53.0" prefWidth="112.0" style="-fx-background-color: #7FFF00;">
+               <children>
+                  <Text fill="#198600" layoutX="25.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category" wrappingWidth="61.80712243914604">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <effect>
+                  <DropShadow color="#00f20c" />
+               </effect>
+            </Pane>
+            <ImageView fitHeight="112.0" fitWidth="158.0" layoutX="1053.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" />
+            <Pane fx:id="yassine" layoutX="1027.0" layoutY="91.0" prefHeight="459.0" prefWidth="240.0" style="-fx-background-color: white;">
+               <children>
+                  <Text fx:id="nomprod" layoutX="135.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="125.9999912828207" />
+                  <Text fx:id="prixprod" layoutX="138.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text fx:id="quantiteprod" layoutX="160.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text fx:id="descriptionprod" layoutX="124.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <ImageView fx:id="imageprod" fitHeight="112.0" fitWidth="141.0" layoutX="57.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
+                  <TextField fx:id="quantitecmd" layoutX="129.0" layoutY="334.0" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: transparent; -fx-background-radius: 100PX; -fx-border-color: #FF00FF; -fx-background-radius: 200PX; -fx-border-radius: 150PX;" stylesheets="@tableview_1_1.css">
+                     <styleClass>
+                        <String fx:value="column-header-background" />
+                        <String fx:value="column-header" />
+                     </styleClass></TextField>
+                  <Text fx:id="idprod" layoutX="75.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" wrappingWidth="38.136719197034836" />
+                  <Text fill="#d613d6" layoutX="13.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom du Produit :" wrappingWidth="102.99999848008156">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#ff2600" layoutX="13.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix Unitaire :" wrappingWidth="109.99996826052666">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#12b8ff" layoutX="12.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantite dans le stock :" wrappingWidth="133.00001941621304">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#f2a500" layoutX="12.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" wrappingWidth="133.00001941621304">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#4dff00" layoutX="12.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantite souhaité:" wrappingWidth="133.00001941621304">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <JFXButton layoutX="58.0" layoutY="387.0" onAction="#ajouter_commande" prefHeight="30.0" prefWidth="141.0" style="-fx-background-radius: 100PX; -fx-border-color: #FF00FF;" text="Passer Commande" textFill="#870066">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="16.0" fitWidth="22.0" layoutX="180.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/backend%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="53.0" layoutY="-19.0" prefHeight="53.0" prefWidth="112.0" style="-fx-background-color: #7FFF00;">
+                     <children>
+                        <Text fill="#198600" layoutX="26.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details" wrappingWidth="75.1290492117405">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <effect>
+                        <DropShadow color="#00f20c" />
+                     </effect>
+                  </Pane>
+               </children>
+               <effect>
+                  <DropShadow color="#ffc00f" />
+               </effect>
+            </Pane>
+            <Text fill="#cd0490" layoutX="511.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our Product" wrappingWidth="240.00001430511475">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="60.0" fitWidth="75.0" layoutX="742.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/new.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="1117.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/design.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="detail" fitHeight="40.0" fitWidth="38.0" layoutX="128.0" layoutY="461.0" onMouseClicked="#detail" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/question.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="83.0" fitWidth="158.0" layoutX="564.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/6ob.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="83.0" fitWidth="158.0" layoutX="490.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/6ob.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="83.0" fitWidth="158.0" layoutX="631.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/6ob.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="55.0" layoutX="117.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/c756feff.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="93.0" fitWidth="126.0" layoutX="346.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/3183281543_1_2_IewO5RNc.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <HBox layoutX="-1.0" layoutY="128.0" prefHeight="40.0" prefWidth="1306.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0">
+         <children>
+            <JFXButton onAction="#homeretour" prefHeight="30.0" prefWidth="206.0" ripplerFill="#ee1d1d" text="Home" textFill="#ff0808" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="40.0" prefWidth="126.0" text="Products" textFill="#c217eb" underline="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton onAction="#inscription" prefHeight="30.0" prefWidth="171.0" text="Inscription" textFill="#ebae29" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#carnet" prefHeight="30.0" prefWidth="183.0" text="Notebook" textFill="#7bd021" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#library" prefHeight="30.0" prefWidth="116.0" text="Library" textFill="#25cdca" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="139.0" text="Clubs" textFill="#eb17cf" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#events" prefHeight="30.0" prefWidth="146.0" text="Events" textFill="#ee1669" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="123.0" text="Canteen" textFill="#e7eb09" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="171.0" text="About us" textFill="#8d2184" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <ImageView fitHeight="50.0" fitWidth="240.0" layoutX="18.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/log.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="360.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+216 71 293 658" wrappingWidth="153.13671875">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="360.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+216  97 293 658" wrappingWidth="153.13671875">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="577.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tunis ,El Ghazella" wrappingWidth="147.000013589859" />
+      <Text layoutX="578.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="38 Rue,Ibn Moataz" wrappingWidth="153.13671875" />
+      <Text layoutX="823.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kido@gmail.com" />
+      <ImageView fitHeight="20.0" fitWidth="30.0" layoutX="332.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/call.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="62.0" layoutX="548.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/geo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="39.0" layoutX="793.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/message.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="86.0" layoutX="897.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bird.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="filterfield" focusColor="#12c64e" layoutX="1038.0" layoutY="81.0" prefHeight="25.0" prefWidth="163.0" promptText="Recherche" unFocusColor="#06a438" />
+      <ImageView fitHeight="29.0" fitWidth="20.0" layoutX="1180.0" layoutY="79.0" onMouseClicked="#login" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/product.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

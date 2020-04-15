@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="737.0" prefWidth="559.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.FXMLChatAdminController">
+   <children>
+      <ImageView fitHeight="343.0" fitWidth="525.0" layoutX="57.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/welcome-illu-begin.png" />
+         </image>
+      </ImageView>
+      <Text fill="#e10505" layoutX="312.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client:" wrappingWidth="83.853515625">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <TextField fx:id="input" layoutX="16.0" layoutY="672.0" prefHeight="41.0" prefWidth="538.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow color="RED" />
+         </effect></TextField>
+      <TextArea fx:id="messages" layoutX="17.0" layoutY="78.0" opacity="0.33" prefHeight="576.0" prefWidth="525.0" style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow color="#ff0009" />
+         </effect></TextArea>
+      <Button fx:id="send" layoutX="471.0" layoutY="678.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-border-color: #ff5959;" text="Envoyer">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <ChoiceBox fx:id="clients" layoutX="380.0" layoutY="30.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: #ff5959;">
+         <effect>
+            <DropShadow color="#e83838" />
+         </effect></ChoiceBox>
+      <Pane fx:id="pane" prefHeight="737.0" prefWidth="559.0" visible="false" />
+      <Label layoutX="69.0" layoutY="22.0" prefHeight="41.0" prefWidth="174.0" text="Messagerie" textFill="#e10505">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow color="#ff5656" />
+         </effect>
+      </Label>
+      <ImageView fitHeight="41.0" fitWidth="49.0" layoutX="212.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/speech-bubble.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="35.0" layoutX="398.0" layoutY="681.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="41.0" fitWidth="51.0" layoutX="408.0" layoutY="676.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/e02856a5407b1e84e6f590f46e087070.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="35.0" layoutX="14.0" layoutY="29.0" onMouseClicked="#retour" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/27-512.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

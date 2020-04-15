@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rootpane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="807.0" prefWidth="1418.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.CarnetController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="49.0" prefWidth="1418.0" styleClass="head-background" stylesheets="@style.css" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="224.0" layoutY="47.0" text="Kid'O" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="227.0" layoutY="100.0" text="Since 2015" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="53.0" fitWidth="62.0" layoutX="36.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@buterfly-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="68.0" layoutX="1035.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/profile.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <HBox layoutX="-1.0" layoutY="128.0" prefHeight="40.0" prefWidth="1846.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-539.0">
+         <children>
+            <JFXButton onAction="#homeretour" prefHeight="30.0" prefWidth="206.0" ripplerFill="#ee1d1d" text="Home" textFill="#ff0808" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#products" prefHeight="30.0" prefWidth="133.0" text="Products" textFill="#c217eb" underline="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton onAction="#inscriptionretour" prefHeight="30.0" prefWidth="183.0" text="Inscription" textFill="#ebae29" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="183.0" text="Notebook" textFill="#7bd021" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#library" prefHeight="30.0" prefWidth="116.0" text="Library" textFill="#25cdca" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="178.0" text="Clubs" textFill="#eb17cf" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#events" prefHeight="30.0" prefWidth="146.0" text="Events" textFill="#ee1669" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="123.0" text="Canteen" textFill="#e7eb09" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="171.0" text="About us" textFill="#8d2184" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <ImageView fitHeight="50.0" fitWidth="240.0" layoutX="18.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@log.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="360.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+216 71 293 658" wrappingWidth="153.13671875">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="360.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+216  97 293 658" wrappingWidth="153.13671875">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="577.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tunis ,El Ghazella" wrappingWidth="147.000013589859" />
+      <Text layoutX="578.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="38 Rue,Ibn Moataz" wrappingWidth="153.13671875" />
+      <Text layoutX="823.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kido@gmail.com" />
+      <ImageView fitHeight="20.0" fitWidth="30.0" layoutX="332.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/call_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="62.0" layoutX="548.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/geo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="39.0" layoutX="793.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/message.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="86.0" layoutX="897.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bird.png" />
+         </image>
+      </ImageView>
+      <Pane layoutY="168.0" prefHeight="601.0" prefWidth="1357.0">
+         <children>
+            <Pane prefHeight="650.0" prefWidth="1354.0">
+               <children>
+                  <Pane fx:id="panel" layoutX="2.0" layoutY="16.0" onMouseMoved="#bounce" prefHeight="74.0" prefWidth="1418.0" style="-fx-background-color: orange;">
+                     <children>
+                        <Text fill="WHITE" layoutX="284.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check NoteBook /Absence">
+                           <font>
+                              <Font name="Book Antiqua Bold" size="44.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="80.0" fitWidth="75.0" layoutX="170.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/name.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="75.0" fitWidth="86.0" layoutX="855.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/DelayedVacantDassie-size_restricted.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <VBox layoutX="50.0" layoutY="206.0" prefHeight="303.0" prefWidth="668.0" style="-fx-background-color: white;">
+                     <effect>
+                        <InnerShadow color="#ff750b" radius="49.65" width="179.6" />
+                     </effect>
+                     <children>
+                        <Pane prefHeight="316.0" prefWidth="668.0">
+                           <children>
+                              <TableView fx:id="tabp" layoutX="60.0" layoutY="51.0" prefHeight="202.0" prefWidth="549.0" stylesheets="@eleve.css">
+                                <columns>
+                                  <TableColumn fx:id="id" prefWidth="75.0" text="id" visible="false" />
+                                  <TableColumn fx:id="note" prefWidth="125.0" text="note" visible="false" />
+                                    <TableColumn fx:id="sem" prefWidth="258.0" text="semestre" />
+                                    <TableColumn fx:id="student" prefWidth="290.0" text="student" />
+                                </columns>
+                                 <effect>
+                                    <InnerShadow color="#c9da0a" />
+                                 </effect>
+                              </TableView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="806.0" layoutY="152.0" prefHeight="368.0" prefWidth="446.0" style="-fx-background-color: white;">
+                     <effect>
+                        <InnerShadow color="#ffa600" height="46.65" radius="24.9625" width="55.2" />
+                     </effect>
+                     <children>
+                        <Pane prefHeight="459.0" prefWidth="460.0">
+                           <children>
+                              <Label fx:id="eleve" contentDisplay="CENTER" layoutX="134.0" layoutY="43.0" prefHeight="52.0" prefWidth="171.0" textFill="#f501c4" underline="true">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="54.0" layoutY="139.0" text="Note:" textFill="#007510">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="54.0" layoutY="187.0" text="Appreciation:" textFill="#e100b8">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="58.0" layoutY="249.0" text="Semestre:" textFill="#1e07ae">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="notee" layoutX="132.0" layoutY="140.0" prefHeight="21.0" prefWidth="123.0">
+                                 <font>
+                                    <Font name="System Bold" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="appreciation" layoutX="218.0" layoutY="189.0" prefHeight="26.0" prefWidth="213.0">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="semestre" layoutX="169.0" layoutY="250.0" prefHeight="21.0" prefWidth="123.0">
+                                 <font>
+                                    <Font name="System Bold" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="58.0" layoutY="304.0" text="Date:" textFill="#09ada3">
+                                 <font>
+                                    <Font name="Book Antiqua Bold Italic" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="date" layoutX="141.0" layoutY="304.0" prefHeight="21.0" prefWidth="123.0">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="flag" fitHeight="65.0" fitWidth="86.0" layoutX="15.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/flag.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="min" fitHeight="80.0" fitWidth="140.0" layoutX="330.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/min.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXButton buttonType="RAISED" layoutX="304.0" layoutY="312.0" onAction="#pdf" prefHeight="33.0" prefWidth="123.0" style="-fx-border-color: green;" text="Imprimer" textFill="#00a400">
+                                 <font>
+                                    <Font name="Britannic Bold" size="18.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+                  <Pane fx:id="det" layoutX="949.0" layoutY="123.0" onMouseMoved="#bo" prefHeight="45.0" prefWidth="160.0" style="-fx-background-color: orange;">
+                     <children>
+                        <Text fill="WHITE" layoutX="34.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details" wrappingWidth="139.6708984375">
+                           <font>
+                              <Font name="Book Antiqua Bold" size="27.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Pane>
+                  <ImageView fitHeight="102.0" fitWidth="346.0" layoutX="285.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/kids.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton buttonType="RAISED" layoutX="57.0" layoutY="120.0" onAction="#show_details_Personne" prefHeight="40.0" prefWidth="171.0" style="-fx-border-color: blue;" text="Details" textFill="#0025db">
+                     <font>
+                        <Font name="Britannic Bold" size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="468.0" layoutY="122.0" onAction="#notification" prefHeight="40.0" prefWidth="160.0" style="-fx-border-color: red;" text="Absence" textFill="#ff1313">
+                     <font>
+                        <Font name="Britannic Bold" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="228.0" layoutY="120.0" onAction="#rating" prefHeight="42.0" prefWidth="240.0" style="-fx-border-color: pink;" text="Donner Un Avis?" textFill="#ee006b">
+                     <font>
+                        <Font name="Britannic Bold" size="25.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children></Pane>
+   </children>
+</AnchorPane>

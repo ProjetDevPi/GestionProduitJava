@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="homebutton" onDragDetected="#showhome" prefHeight="743.0" prefWidth="1306.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.EmpruntController">
+    <children>
+      <ImageView fitHeight="538.0" fitWidth="421.0" layoutX="759.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/4rMWo8mW.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="538.0" fitWidth="421.0" layoutX="211.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/4rMWo8mW.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tab_doc" layoutX="274.0" layoutY="301.0" opacity="0.88" prefHeight="231.0" prefWidth="322.0">
+         <columns>
+            <TableColumn fx:id="nomdoc" prefWidth="138.0" text="Document Name" />
+            <TableColumn fx:id="catdoc" prefWidth="92.0" text="Category" />
+            <TableColumn fx:id="etatdoc" prefWidth="92.0" text="State" />
+         </columns>
+      </TableView>
+      <Button fx:id="buttemp" layoutX="370.0" layoutY="586.0" mnemonicParsing="false" onAction="#ajouteremp" opacity="0.9" prefHeight="37.0" prefWidth="114.0" style="-fx-background-radius: 100PX; -fx-background-color: #ba00ad;" text="Loan" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Label layoutX="34.0" layoutY="387.0" text="Return Date" textFill="#ba00ad">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Pane prefHeight="49.0" prefWidth="1315.0" styleClass="head-background">
+         <children>
+            <Label layoutX="227.0" layoutY="100.0" text="Since 2015" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="53.0" fitWidth="62.0" layoutX="36.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/buterfly-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="62.0" layoutX="1139.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/login.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="68.0" layoutX="1059.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/profile.png" />
+               </image>
+            </ImageView>
+         </children>
+         <stylesheets>
+            <URL value="@style.css" />
+            <URL value="@../../../Drapo-Dashboard-JavaFX-master/src/drapo/dashboard/style.css" />
+         </stylesheets>
+      </Pane>
+      <HBox layoutX="9.0" layoutY="138.0" prefHeight="40.0" prefWidth="1297.0">
+         <children>
+            <JFXButton onAction="#showhome" prefHeight="30.0" prefWidth="206.0" ripplerFill="#ee1d1d" text="Home" textFill="#ff0808" underline="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton onAction="#products" prefHeight="30.0" prefWidth="133.0" text="Products" textFill="#c217eb" underline="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton onAction="#inscriptionretour" prefHeight="30.0" prefWidth="183.0" text="Inscription" textFill="#ebae29" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#carnet" prefHeight="30.0" prefWidth="183.0" text="Notebook" textFill="#7bd021" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="116.0" text="Library" textFill="#25cdca" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="178.0" text="Clubs" textFill="#eb17cf" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#events" prefHeight="30.0" prefWidth="146.0" text="Events" textFill="#ee1669" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="123.0" text="Canteen" textFill="#e7eb09" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="171.0" text="About us" textFill="#8d2184" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <ImageView fitHeight="50.0" fitWidth="240.0" layoutX="28.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/log.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="370.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+216 71 293 658" wrappingWidth="153.13671875">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="370.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+216  97 293 658" wrappingWidth="153.13671875">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="587.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tunis ,El Ghazella" wrappingWidth="147.000013589859" />
+      <Text layoutX="588.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="38 Rue,Ibn Moataz" wrappingWidth="153.13671875" />
+      <Text layoutX="833.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kido@gmail.com" />
+      <ImageView fitHeight="20.0" fitWidth="30.0" layoutX="342.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/call.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="62.0" layoutX="558.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/geo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="39.0" layoutX="803.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/message.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="99.0" layoutX="1228.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/caterpillar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="86.0" layoutX="907.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bird-2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="43.0" layoutY="257.0" text="Loan Date" textFill="#ba00ad">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="360.0" layoutY="259.0" text="Documents' List" textFill="#ba00ad">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Separator layoutX="627.0" layoutY="212.0" orientation="VERTICAL" prefHeight="561.0" prefWidth="7.0" style="-fx-background-color: transparent;">
+         <effect>
+            <DropShadow color="#ffac12" />
+         </effect></Separator>
+      <JFXDatePicker fx:id="date_emp" layoutX="12.0" layoutY="312.0" prefHeight="25.0" prefWidth="190.0" />
+      <JFXDatePicker fx:id="date_ret" layoutX="6.0" layoutY="435.0" prefHeight="25.0" prefWidth="190.0" />
+      <TableView fx:id="tab_empuser" layoutX="792.0" layoutY="302.0" opacity="0.84" prefHeight="200.0" prefWidth="322.0">
+        <columns>
+          <TableColumn fx:id="nomdocemp" prefWidth="136.0" text="Document Name" />
+          <TableColumn fx:id="dateempaff" prefWidth="96.0" text="Loan Date" />
+            <TableColumn fx:id="dateretaff" prefWidth="96.0" text="Return Date" />
+        </columns>
+      </TableView>
+      <JFXDatePicker fx:id="newretdate" layoutX="653.0" layoutY="592.0" />
+      <Label layoutX="647.0" layoutY="561.0" prefHeight="21.0" prefWidth="134.0" text="New Return Date" textFill="#ff7b00">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="91.0" layoutY="-21.0" text="Label" />
+      <Label layoutX="913.0" layoutY="252.0" prefHeight="37.0" prefWidth="115.0" text="Loans' List" textFill="#ffa100">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="extendbutt" layoutX="685.0" layoutY="663.0" mnemonicParsing="false" onAction="#extensionemp" prefHeight="32.0" prefWidth="86.0" style="-fx-background-color: ORANGE; -fx-background-radius: 100PX;" text="Extend" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Pane layoutX="252.0" layoutY="202.0" opacity="0.84" prefHeight="53.0" prefWidth="200.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow color="#ba00ad" />
+         </effect>
+         <children>
+            <Label layoutX="39.0" layoutY="11.0" prefHeight="32.0" prefWidth="147.0" text="Make A Loan" textAlignment="CENTER" textFill="#ba00ad" underline="true">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="19.0" layoutY="517.0" opacity="0.91" prefHeight="200.0" prefWidth="156.0" style="-fx-background-color: WHITE;">
+         <effect>
+            <DropShadow color="#ba00ad" />
+         </effect>
+         <children>
+            <ImageView fx:id="imgview" fitHeight="200.0" fitWidth="180.0" layoutX="2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Pane layoutX="833.0" layoutY="190.0" opacity="0.79" prefHeight="59.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+         <effect>
+            <DropShadow color="#ff9000" />
+         </effect>
+         <children>
+            <Label layoutX="10.0" layoutY="19.0" text="Make An Extension" textAlignment="CENTER" textFill="#fc8a00" underline="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+
+    </children>
+</AnchorPane>

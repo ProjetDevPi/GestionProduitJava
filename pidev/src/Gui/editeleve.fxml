@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="661.0" prefWidth="805.0" styleClass="bg" stylesheets="@style_1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.EditeleveController">
+   <children>
+      <VBox layoutX="79.0" layoutY="62.0" prefHeight="538.0" prefWidth="647.0" style="-fx-background-color: white;">
+         <children>
+            <Pane prefHeight="556.0" prefWidth="647.0">
+               <children>
+                  <JFXTextField fx:id="id" layoutX="199.0" layoutY="118.0" prefHeight="31.0" prefWidth="269.0" />
+                  <JFXTextField fx:id="prenom" layoutX="199.0" layoutY="238.0" prefHeight="31.0" prefWidth="269.0" />
+                  <JFXTextField fx:id="age" layoutX="202.0" layoutY="302.0" prefHeight="31.0" prefWidth="269.0" />
+                  <JFXTextField fx:id="adresse" layoutX="202.0" layoutY="355.0" prefHeight="31.0" prefWidth="269.0" />
+                  <JFXTextField fx:id="niveau" layoutX="199.0" layoutY="414.0" prefHeight="31.0" prefWidth="277.0" />
+                  <JFXTextField fx:id="filechoose" layoutX="192.0" layoutY="472.0" />
+                  <Label layoutX="72.0" layoutY="188.0" text="nom" textFill="#ff01e1">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="23.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="nom" layoutX="199.0" layoutY="172.0" prefHeight="31.0" prefWidth="269.0" />
+                  <Label layoutX="69.0" layoutY="254.0" text="prenom" textFill="#ff01e1">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="84.0" layoutY="310.0" text="age" textFill="#ff01e1">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="69.0" layoutY="364.0" text="adresse" textFill="#ff01e1">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="69.0" layoutY="430.0" text="niveau" textFill="#ff01e1">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="73.0" layoutY="487.0" text="image" textFill="#ff01e1">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="23.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="chooser" buttonType="RAISED" layoutX="425.0" layoutY="483.0" onAction="#image" prefHeight="38.0" prefWidth="86.0" style="-fx-background-color: orange;" text="choose">
+                     <font>
+                        <Font name="Book Antiqua" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="81.0" layoutY="134.0" text="id" textFill="#ff01e1">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="23.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" layoutX="544.0" layoutY="451.0" onAction="#onedit" prefHeight="72.0" prefWidth="75.0" style="-fx-background-color: yellow;" text="Edit">
+                     <font>
+                        <Font name="Book Antiqua Bold Italic" size="22.0" />
+                     </font>
+                  </JFXButton>
+                  <Text fill="#008600" layoutX="150.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Student">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="52.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="105.0" fitWidth="152.0" layoutX="474.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/RewardingCalmGroundhog-size_restricted.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Pane>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>
