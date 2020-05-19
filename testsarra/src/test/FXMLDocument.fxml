@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="374.0" prefWidth="652.0" style="-fx-background-color: pink;" styleClass="bg" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.FXMLDocumentController">
+    <children>
+      <Label fx:id="lblnom" layoutX="25.0" layoutY="78.0" prefHeight="43.0" prefWidth="64.0" style="-fx-background-color: #0000;" text="nom" />
+      <TextField fx:id="txtfield2" layoutX="60.0" layoutY="94.0" styleClass="custom-text-field" stylesheets="@../textfieldcss.css" />
+      <TextField fx:id="txtfield" layoutX="60.0" layoutY="134.0" styleClass="custom-text-field" stylesheets="@../textfieldcss.css" />
+      <Label fx:id="lblpre" layoutX="14.0" layoutY="136.0" text="prenom" />
+      <Button fx:id="btnclick" layoutX="196.0" layoutY="260.0" mnemonicParsing="false" onAction="#addP" styleClass="round-red" stylesheets="@../buttonstyle.css" text="inserer" />
+      <Label fx:id="lab" layoutX="261.0" layoutY="272.0" text="Label" />
+      <Button fx:id="btnexit" graphicTextGap="6.0" layoutX="410.0" layoutY="307.0" mnemonicParsing="false" onAction="#exit" prefHeight="43.0" prefWidth="91.0" styleClass="big-yellow" stylesheets="@../buttonstyle.css" text="exit" />
+      <Label fx:id="label2" layoutX="194.0" layoutY="39.0" text="Label" />
+      <TableView fx:id="tableviewP" layoutX="311.0" layoutY="27.0" prefHeight="288.0" prefWidth="346.0">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="75.0" text="nom" />
+          <TableColumn fx:id="prenom" prefWidth="75.0" text="prenom" />
+            <TableColumn fx:id="imageC" prefWidth="75.0" text="image" />
+            <TableColumn fx:id="nomU" prefWidth="75.0" text="user" />
+            <TableColumn fx:id="idC" prefWidth="75.0" text="id" visible="false" />
+        </columns>
+      </TableView>
+      <TextField fx:id="filechoose" layoutX="67.0" layoutY="175.0" />
+      <Button fx:id="chooser" layoutX="158.0" layoutY="175.0" mnemonicParsing="false" onAction="#image" text="chooser" />
+      <ImageView fx:id="imageView" fitHeight="113.0" fitWidth="139.0" layoutX="8.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" />
+      <ComboBox fx:id="user" layoutX="67.0" layoutY="222.0" prefWidth="150.0" />
+      <Button layoutX="72.0" layoutY="287.0" mnemonicParsing="false" onAction="#edit" prefHeight="32.0" prefWidth="139.0" text="_edit personne" />
+      <Button layoutX="235.0" layoutY="291.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="98.0" text="delete" />
+      <JFXTextField fx:id="recherche" layoutX="377.0" layoutY="-5.0" onAction="#rechercheAction" prefHeight="32.0" prefWidth="246.0" style="-fx-background-color: white;" />
+      <Label layoutX="21.0" layoutY="179.0" prefHeight="17.0" prefWidth="52.0" text="File" />
+      <Label fx:id="errornom" layoutX="221.0" layoutY="96.0" prefHeight="17.0" prefWidth="84.0" />
+      <Label fx:id="errornbrpersonne" layoutX="221.0" layoutY="136.0" prefHeight="17.0" prefWidth="84.0" />
+      <Label fx:id="errorcategorie" layoutX="234.0" layoutY="226.0" prefHeight="21.0" prefWidth="91.0" />
+     
+    </children>
+</AnchorPane>
